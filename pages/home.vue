@@ -3,5 +3,5 @@ const route = useRoute()
 </script>
 
 <template>
-<div class="w-[100%] m-6 h-[36rem] bg-green-200"></div>
+        <h1>Hello</h1>
 </template>

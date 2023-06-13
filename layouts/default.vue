@@ -92,9 +92,9 @@ export default {
 <template>
     <nav class="flex flex-row justify-between">
         <div class="mx-4">
-            <img :class="'w-40 h-22 '" src="~/assets/images/logo.png" alt="">
+            <img :class="'w-40 h-22'" src="~/assets/images/logo.png" alt="">
         </div>
-        <div class="flex flex-row items-center justify-evenly mx-2 w-[60%]">
+        <div class="flex flex-row items-center justify-evenly w-[60%]">
 
             <ul v-for="navitem in navitems" :key="navitem.id">
                 <NuxtLink :class="'font-semibold'" :to=navitem.to>{{ navitem.name }}</NuxtLink>
@@ -103,10 +103,8 @@ export default {
 
         </div>
     </nav>
-    <div>
-        <slot />
-    </div>
-    <footer :class="'flex flex-col items-center justify-between'">
+    <slot />
+    <footer :class="'flex flex-col items-center justify-around'">
         <div :class="'text-center space-y-4'">
             <h1 class="text-5xl font-semibold">Get Better Deals</h1>
             <p class="text-slate-500">See why hundreds of tourists choose our resorts. Because we are the best and bla bla.
